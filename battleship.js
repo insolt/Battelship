@@ -35,17 +35,17 @@ var model={
 			if (index>=0) {
 				ship.hits[index]="hit";
 				view.displayHit(guess);
-				view.displayMessage("TRAFIONY!");
+				view.displayMessage("HIT!");
 				if (this.isSunk(ship)) {
 					console.log(this.isSunk(ship));
-					view.displayMessage("Zatopi&#322;e&#347; okr&#281;t!");
+					view.displayMessage("Ship is sung!");
 					this.shipsSunk++;
 				}
 				return true;
 			}
 		}
 		view.displayMiss(guess);
-		view.displayMessage("Spud&#322;owa&#322;e&#347;!")
+		view.displayMessage("MISSED!")
 		return false;
 	},
 	
@@ -114,7 +114,7 @@ var controller={
 			this.guesses++;
 			var hit=model.fire(location);
 			if (hit && model.shipsSunk===model.sumShip) {
-				view.displayMessage("Zatopi&#322;e&#347; wszystkie okr&#281;ty w "+this.guesses+" pr&#243;bach.");
+				view.displayMessage("You sunk all the ships after "+this.guesses+" hits.");
 			}
 		}
 	}
@@ -124,7 +124,7 @@ function parseGuess(guess) {
 	var alphabet=["A", "B", "C", "D", "E", "F", "G"];
 	var secondFigure=["1", "2", "3", "4", "5", "6", "7"];
 	if (guess===null || guess.length!=2) {
-		alert("Ups, prosze wpisac litere i cyfre");
+		alert("Ups... type letter and number");
 	} else {
 		var firstChar=guess.charAt(0);
 		var row=alphabet.indexOf(firstChar);
@@ -133,9 +133,9 @@ function parseGuess(guess) {
 		var column=secondFigure.indexOf(secondChar);
 
 		if (isNaN(row) || isNaN(column)) {
-			alert("Wspolrzedne sa nieprawidlowe");
+			alert("Wrong coordinates");
 		} else if (row<0 || row>=model.boardSize || column<0 || column>=model.boardSize) {
-			alert("Wspolrzedne poza plansza");
+			alert("Coordinates out of range");
 		} else {
 			return row+''+column;
 		}
