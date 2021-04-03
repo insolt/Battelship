@@ -1,3 +1,3 @@
 # Battelship
-Battelship game copied from Head First! Programing in JavaScript during learning process
-Needs some improvements
+12/2019 - Battelship game copied from Head First! Programing in JavaScript during learning process.
+04-2021 - It needs some improvements... so, lets start! :-)
