@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3f3939;
+    font-family: verdana, sans-serif;
+}
+
+div#container {
+    position: relative;
+    width: 810px;
+    height: 810px;
+    margin: 0 auto;
+    background: url("../images/plansza.png") no-repeat;
+}
+
+div#container div#comments {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.8em;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 15px;
+    background-color: royalblue;
+}
+
+div#container table {
+    position: absolute;
+    top: 138px;
+    left: 98px;
+}
+
+div#container table tr td {
+    position: relative;
+    width: 88px;
+    height: 77px;
+}
+
+div#container table tr td input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+}
+
+div#container table tr td input:checked~span {
+    z-index: 20;
+}
+
+div#container table tr td input:hover {
+    cursor: pointer;
+}
+
+div#container table tr td span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+div#container table tr .miss {
+    background: url("../images/pudlo.png") no-repeat center center;
+}
+
+div#container table tr .hit {
+    background: url("../images/ship.png") no-repeat center center;
+}
+
+div#container div#reset_game {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+div#container div#reset_game button.reset_game {
+    width: 200px;
+    height: 50px;
+    font-size: 2em;
+    color: #fff;
+    background-color: royalblue;
+    border-radius: 7px;
+}
+
+div#container div#reset_game button.reset_game:hover {
+    cursor: pointer;
+}
+
+div#container div#reset_game button.reset_game:focus {
+    outline: none;
+}
