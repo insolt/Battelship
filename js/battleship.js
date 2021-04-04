@@ -149,5 +149,9 @@ function startNewGame(e) {
 newGame.addEventListener('click', startNewGame);
 
 for (let i=0; i<fireLocation.length; i++) {
+	fireLocation[i].checked = true;
+}
+
+for (let i=0; i<fireLocation.length; i++) {
 	fireLocation[i].addEventListener('change', controller.processFire);
 }

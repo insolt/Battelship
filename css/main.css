@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #3f3939;
+    background-color: #000;
     font-family: verdana, sans-serif;
 }
 
@@ -24,8 +24,8 @@ div#container div#comments {
     font-size: 1.8em;
     color: #fff;
     border-radius: 7px;
-    padding: 5px 15px;
     background-color: royalblue;
+    padding: 5px 15px;
 }
 
 div#container table {
@@ -76,13 +76,13 @@ div#container table tr .hit {
 
 div#container div#reset_game {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: -70px;
+    right: calc(50% - 160px);
 }
 
 div#container div#reset_game button.reset_game {
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: 100px;
     font-size: 2em;
     color: #fff;
     background-color: royalblue;
