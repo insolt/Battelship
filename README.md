@@ -5,10 +5,12 @@ Dec/2019 - Battelship game copied from Head First! Programing in JavaScript duri
 
 There are stil some features to add, like input for saving players' names and set up local storage to collect scores. So, feel free to colaborate.
 
+Rules are simple: find three hidden on the board ships - three squares long each.
+
 In order to play, you will have to copy:
   - index.html file,
   - css folder,
   - js folder.
 
-Or you can simply click <a href="http://insolt.infinityfreeapp.com">HERE...</a>
+Or you can simply click <a href="http://insolt.infinityfreeapp.com">HERE...</a><br>
 Enjoy
