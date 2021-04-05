@@ -10,7 +10,8 @@ Rules are simple: on the board find three hidden ships - three squares long each
 In order to play, you will have to copy:
   - index.html file,
   - css folder,
-  - js folder.
+  - js folder,
+  - images folder.
 
 Or you can simply click <a href="http://insolt.infinityfreeapp.com">HERE...</a><br>
 Enjoy
