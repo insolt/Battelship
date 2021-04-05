@@ -51,7 +51,7 @@ let model = {
 	
 	collision: function(location) {
 		for (let i = 0; i < this.numShips; i++) {
-			let ship = model.ships[i];
+			let ship = this.ships[i];
 			for (let j = 0; j < location.length; j++) {
 				if (ship.locations.indexOf(location[j]) >= 0) {
 					return true;
@@ -65,16 +65,16 @@ let model = {
 	 * Action
 	 */
 	fire: function(guess) {
-		for (let i = 0; i < model.numShips; i++) {
-			let ship = model.ships[i];
+		for (let i = 0; i < this.numShips; i++) {
+			let ship = this.ships[i];
 			let index = ship.locations.indexOf(guess);
 			if (index >= 0) {
 				ship.hits[index]="hit";
 				view.displayAim(guess, "hit");
 				view.displayMessage("Trafiony!");
-				if (model.isSunk(ship)) {
+				if (this.isSunk(ship)) {
 					view.displayMessage("Statek zatopiony! Brawo!");
-					model.shipsSunk++;
+					this.shipsSunk++;
 				}
 				return;
 			} else {
