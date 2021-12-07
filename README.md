@@ -13,5 +13,5 @@ In order to play, you will have to copy:
   - js folder,
   - images folder.
 
-Or you can simply click <a href="http://insolt.000webhostapp.com">HERE...</a><br>
+Or you can simply click <a href="http://insolt.42web.io">HERE...</a><br>
 Enjoy
